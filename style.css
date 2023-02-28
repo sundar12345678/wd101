@@ -1,0 +1,28 @@
+body {
+  background-color: rgba(255, 0, 128, 0.76);
+  padding-right: 32%;
+  padding-top: 8%;
+}
+
+h1 {
+  color: rgb(4, 145, 34);
+}
+
+h2 {
+  font-style: italic;
+  font-family:monospace;
+  color: rgb(124, 3, 3);
+}
+
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid rgb(59, 15, 255);
+  padding: 10px;
+}
