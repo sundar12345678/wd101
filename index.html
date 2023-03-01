@@ -4,39 +4,50 @@
     <meta charset="UTF-8" />
     <title>Registration form for students</title>
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
   <body>
-    <script src="index.js"></script>
-    <h1>Registration form for students</h1>
-<div class="center">
+
+    <div style="display: flex;">
+    <img src="cat.jpg" style="width: 200px; height: 150px; padding-top: 9%;" alt="my favourite">
+    
+
+    <div class="center">
+    <h1>REGISTRATION FOR THE STUDENT</h1>
+    </div>
+
+    <div class="center">
+
     <form id="registration-form-for-students" style="border: 3%">
       <div>
-        <label for="name">Name:</label>
+        <label for="name">Name<span aria-hidden="true" class="required">* :</span></label>
         <input
           type="text"
-          placeholder="enter name"
+          placeholder="Kindly Enter your Name"
           id="name"
           required
         />
       </div>
       <br />
       <div>
-        <label for="email">Email:</label>
-        <input type="email" placeholder="Enter your mail" id="email" required />
+        <label for="email">Email<span aria-hidden="true" class="required">* :</span></label>
+        <input type="email" placeholder="Enter your valid E-mail" id="email" required />
       </div>
       <br />
       <div>
-        <label for="password">Password:</label>
+        <label for="password">Password<span aria-hidden="true" class="required">* :</span></label>
         <input
           type="password"
-          placeholder="please enter your password"
+          placeholder="Please Enter Password"
           id="password"
           required
         />
       </div>
       <br />
       <div>
-        <label for="dob">Date of Birth:</label>
+        <label for="dob">Date of Birth<span aria-hidden="true" class="required">* :</span></label>
         <input type="date" id="dob" required />
       </div>
       <br />
@@ -52,7 +63,7 @@
 
     <h2>Entries of the Persons</h2>
 
-    <table id="entries-table">
+    <table id="entries-table-body">
       <thead>
         <tr>
           <th>Name</th>
@@ -62,9 +73,12 @@
           <th>Accepted terms?</th>
         </tr>
       </thead>
-      <tbody id="entries-table-body"></tbody>
+      <tbody id="entries-table"></tbody>
     </table>
-  </div>
-    
+
+    <script src="index.js"></script>
+    </div>
+    </div>
+
   </body>
 </html>

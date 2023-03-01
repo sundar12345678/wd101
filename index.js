@@ -1,5 +1,5 @@
 const form = document.getElementById("registration-form-for-students");
-const entriesTable = document.getElementById("entries-table-body");
+const entriesTable = document.getElementById("entries-table");
 const entries = JSON.parse(localStorage.getItem("entries")) || [];
 for (const entry of entries) {
   const Row = entriesTable.insertRow();
@@ -24,7 +24,7 @@ form.addEventListener("submit", (event) => {
   const acceptedTerms = document.getElementById("accepted-terms").checked;
 
   if (!name || !email || !password || !dob || !acceptedTerms) {
-    alert("Please fill in all the fields.");
+    alert("Please ensure that you will enter all the details.");
     return false;
   }
 
@@ -42,7 +42,7 @@ form.addEventListener("submit", (event) => {
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!email.match(emailRegex)) {
-    alert("Wrong Email Address");
+    alert("Your Entering wrong Email Address. Please enter a valid Email");
     return false;
   }
 
